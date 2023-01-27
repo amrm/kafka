@@ -82,9 +82,15 @@
 	Result:
 		This is last one
 
+# adding new partitions per topic
+	
+	command: 
+		bin/kafka-topics.sh --alter --bootstrap-server localhost:9092 --topic daily-knowledge-events --partitions 4
+
+
 
 # Next
-	1- Java Producer
-	2- Java Consumer
-	3- Kafka Stream
+	
+	1- Kafka Stream
 		Link: https://kafka.apache.org/documentation/streams/
+	2- Save in partitions based on key (the same message that has the same hashkey would be saved in on partition all the time)
