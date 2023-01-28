@@ -87,10 +87,11 @@
 	command: 
 		bin/kafka-topics.sh --alter --bootstrap-server localhost:9092 --topic daily-knowledge-events --partitions 4
 
-
+# KAFKA Stream
+	Kafka Stream consume data from topic then anaylze or transform data and send it to another topic.
+	Example of kafka streaming: counts frequent words
+	
 
 # Next
 	
-	1- Kafka Stream
-		Link: https://kafka.apache.org/documentation/streams/
-	2- Save in partitions based on key (the same message that has the same hashkey would be saved in on partition all the time)
+	1- Save in partitions based on key (the same message that has the same hashkey would be saved in on partition all the time)
